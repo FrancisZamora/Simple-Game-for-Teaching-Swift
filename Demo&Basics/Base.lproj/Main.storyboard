@@ -77,8 +77,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have 100 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbN-q1-RdJ">
-                                <rect key="frame" x="104" y="8" width="171" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE WINNER IS " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbZ-VX-mhg">
+                                <rect key="frame" x="94" y="45" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEa-K8-5n2">
+                                <rect key="frame" x="221" y="44" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have 60 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbN-q1-RdJ">
+                                <rect key="frame" x="103" y="15" width="164" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -90,6 +104,7 @@
                     <connections>
                         <outlet property="changingView" destination="8bC-Xf-vdC" id="do7-NQ-EvC"/>
                         <outlet property="initTime" destination="hbN-q1-RdJ" id="3Tl-TL-n0S"/>
+                        <outlet property="initalTitle" destination="LbA-aY-GCu" id="72s-Dn-LWx"/>
                         <outlet property="newLabel" destination="K8W-mE-KTL" id="Uyx-D1-XLx"/>
                         <outlet property="playerLabel" destination="BOk-oH-4je" id="y1H-ma-l6h"/>
                         <outlet property="playerSwitch" destination="OZi-mc-ZBu" id="QKD-Zq-FeR"/>
@@ -99,11 +114,13 @@
                         <outlet property="theSwitch" destination="X1m-eV-RYX" id="DaD-aI-Hne"/>
                         <outlet property="timerDis" destination="Cay-Yn-RA6" id="ETO-V5-RWe"/>
                         <outlet property="welcomeGreeting" destination="LbA-aY-GCu" id="kLi-1u-WIV"/>
+                        <outlet property="winnerL" destination="vbZ-VX-mhg" id="KLF-Ft-CNh"/>
+                        <outlet property="winnerPlayer" destination="DEa-K8-5n2" id="laN-hf-xk4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+            <point key="canvasLocation" x="143" y="160"/>
         </scene>
     </scenes>
 </document>
