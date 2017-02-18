@@ -28,12 +28,14 @@ class ViewController: UIViewController {
     @IBOutlet var newLabel: UILabel!
      @IBOutlet var changingView: UIView!
     
-    
-    
+    @IBOutlet var initTime: UILabel!
+    @IBOutlet var timerDis: UILabel!
     
     var score2 = 0
 
     @IBAction func scoreWillChange(_ sender: Any) {
+       
+        
         if playerSwitch.isOn{
             changingView.backgroundColor = UIColor.blue
         score2 = score2 + 1
@@ -67,23 +69,6 @@ class ViewController: UIViewController {
     
     var score1 = 0
     @IBAction func viewWillChange(_ sender: AnyObject) {
-        /*
-        if theSwitch.isOn {
-            changingView.backgroundColor = UIColor.magenta
-        score1 = score1 + 1
-        print(score1)
-        
-        let stringScoring = String(describing: score1)
-            scoreDisplay2.text = stringScoring
-        }
-        else {
-            changingView.backgroundColor = UIColor.green
-            //newLabel.text = "The view is now red"
-            //score1 = score1 + 1
-            let stringScoring = String(describing: score1)
-            scoreDisplay.text = stringScoring
-        }
- */
         
         if theSwitch.isOn{
             changingView.backgroundColor = UIColor.magenta

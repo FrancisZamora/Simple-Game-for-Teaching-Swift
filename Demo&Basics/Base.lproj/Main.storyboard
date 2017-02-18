@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -70,11 +70,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cay-Yn-RA6">
+                                <rect key="frame" x="166" y="81" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have 100 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbN-q1-RdJ">
+                                <rect key="frame" x="104" y="8" width="171" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="changingView" destination="8bC-Xf-vdC" id="do7-NQ-EvC"/>
+                        <outlet property="initTime" destination="hbN-q1-RdJ" id="3Tl-TL-n0S"/>
                         <outlet property="newLabel" destination="K8W-mE-KTL" id="Uyx-D1-XLx"/>
                         <outlet property="playerLabel" destination="BOk-oH-4je" id="y1H-ma-l6h"/>
                         <outlet property="playerSwitch" destination="OZi-mc-ZBu" id="QKD-Zq-FeR"/>
@@ -82,6 +97,7 @@
                         <outlet property="scoreDisplay" destination="VWZ-Pq-QGw" id="HEC-Lk-N2T"/>
                         <outlet property="scoreDisplay2" destination="mCs-VD-bVo" id="qD3-bY-eVC"/>
                         <outlet property="theSwitch" destination="X1m-eV-RYX" id="DaD-aI-Hne"/>
+                        <outlet property="timerDis" destination="Cay-Yn-RA6" id="ETO-V5-RWe"/>
                         <outlet property="welcomeGreeting" destination="LbA-aY-GCu" id="kLi-1u-WIV"/>
                     </connections>
                 </viewController>
