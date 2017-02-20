@@ -73,6 +73,25 @@ class ViewController: UIViewController {
             
             
         }
+        
+        if (count == 30) {
+            initalTitle.text = "You have 30 seconds remaining"
+            initalTitle.isHidden = false
+        }
+        
+        if (count == 10) {
+            initalTitle.text = "You have 10 seconds remaining"
+            initalTitle.isHidden = false
+
+        }
+        
+        if (count == 0) {
+            //would you like to play again
+            //restartButton.hidden = false
+            //
+        }
+        //constantly display data below
+        
     }
 
     @IBAction func scoreWillChange(_ sender: Any) {
