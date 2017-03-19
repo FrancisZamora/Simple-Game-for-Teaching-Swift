@@ -9,7 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var count = 60
 
+    @IBAction func timeReset(_ sender: Any) {
+        count = 60
+        
+    }
+    @IBOutlet var resetButton: UIButton!
     @IBOutlet var playerSwitch: UISwitch!
     
     @IBOutlet var playerLabel: UILabel!
@@ -28,10 +34,67 @@ class ViewController: UIViewController {
     @IBOutlet var newLabel: UILabel!
      @IBOutlet var changingView: UIView!
     
-    @IBOutlet var initTime: UILabel!
+    @IBOutlet var Winner: UILabel!
+    
     @IBOutlet var timerDis: UILabel!
     
+    
     var score2 = 0
+    func update() {
+        if(count > 0 ){
+            let minutes = String(count / 60)
+            let seconds = String(count % 60)
+            timerDis.text = minutes + ":" + seconds
+            count = count - 1
+            print(count)
+            Winner.isHidden = true
+            resetButton.isHidden = true 
+        }
+        
+        if count > 0 && count > 50 {
+                    
+            
+        }
+            if (count == 60) {
+                let minutes = String(count / 60)
+                let seconds = String(count % 60)
+                timerDis.text = minutes + ":" + seconds
+                print(count)
+                count -= 1
+                resetButton.isHidden = true
+                Winner.isHidden = true
+                
+            }
+             if (count == 0) {
+                    timerDis.text = "0:0"
+                    Winner.isHidden = false
+                    self.resetScore()
+                    resetButton.isHidden = false
+                        
+                        
+            }
+          }
+    
+    func resetScore (){
+            if score1 > score2 {
+                Winner.text = "Player 2"
+            }
+        
+             if score2 > score1 {
+                       Winner.text = "Player 1"
+                
+             }
+        
+        if (score1 == score2) {
+            Winner.text = "Tie Game, Play Again"
+        }
+            score2 = 0
+            score1 = 0
+        
+    }
+    
+    
+    
 
     @IBAction func scoreWillChange(_ sender: Any) {
        
@@ -106,8 +169,9 @@ class ViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        changingView.backgroundColor = UIColor.blue
-        
+        changingView.backgroundColor = UIColor.red
+        Timer.scheduledTimer(timeInterval: 1,target: self,selector: #selector(self.update),userInfo: nil,repeats: true)
+        self.update()
         newLabel.text = "Player 2 "
         // Do any additional setup after loading the view, typically from a nib.
     }
