@@ -14,6 +14,7 @@
 		15262A521E3E6D62007A23DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15262A501E3E6D62007A23DA /* LaunchScreen.storyboard */; };
 		15262A5D1E3E6D62007A23DA /* Demo_BasicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15262A5C1E3E6D62007A23DA /* Demo_BasicsTests.swift */; };
 		15262A681E3E6D62007A23DA /* Demo_BasicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15262A671E3E6D62007A23DA /* Demo_BasicsUITests.swift */; };
+		155DA2911E886C1D00FE99BB /* TapoutWar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155DA2901E886C1D00FE99BB /* TapoutWar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		15262A631E3E6D62007A23DA /* Demo&BasicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo&BasicsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15262A671E3E6D62007A23DA /* Demo_BasicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_BasicsUITests.swift; sourceTree = "<group>"; };
 		15262A691E3E6D62007A23DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		155DA2901E886C1D00FE99BB /* TapoutWar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapoutWar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				15262A471E3E6D62007A23DA /* AppDelegate.swift */,
 				15262A491E3E6D62007A23DA /* ViewController.swift */,
+				155DA2901E886C1D00FE99BB /* TapoutWar.swift */,
 				15262A4B1E3E6D62007A23DA /* Main.storyboard */,
 				15262A4E1E3E6D62007A23DA /* Assets.xcassets */,
 				15262A501E3E6D62007A23DA /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			files = (
 				15262A4A1E3E6D62007A23DA /* ViewController.swift in Sources */,
 				15262A481E3E6D62007A23DA /* AppDelegate.swift in Sources */,
+				155DA2911E886C1D00FE99BB /* TapoutWar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
