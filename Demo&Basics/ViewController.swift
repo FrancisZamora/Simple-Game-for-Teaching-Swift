@@ -34,8 +34,10 @@ class ViewController: UIViewController {
     @IBOutlet var newLabel: UILabel!
      @IBOutlet var changingView: UIView!
     
+    @IBOutlet var tapoutWar: UIButton!
     @IBOutlet var Winner: UILabel!
     
+    @IBOutlet var tapoutButton: UIButton!
     @IBOutlet var timerDis: UILabel!
     
     
@@ -170,6 +172,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         changingView.backgroundColor = UIColor.red
+        tapoutWar.layer.cornerRadius = 10
+        tapoutWar.layer.masksToBounds = true
         Timer.scheduledTimer(timeInterval: 1,target: self,selector: #selector(self.update),userInfo: nil,repeats: true)
         self.update()
         newLabel.text = "Player 2 "
