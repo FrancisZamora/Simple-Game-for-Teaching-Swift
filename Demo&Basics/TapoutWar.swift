@@ -44,6 +44,19 @@ class TapoutWar: UIViewController {
         self.backgroundView.clipsToBounds = true
         self.backgroundView.layer.borderWidth = 1.5
         self.backgroundView.layer.borderColor = UIColor(red:0.18, green:0.26, blue:0.35, alpha:1.0).cgColor
+        self.backgroundTitle.layer.cornerRadius = self.backgroundTitle.frame.height/2
+        self.backgroundTitle.clipsToBounds = true
+        self.backgroundTitle.clipsToBounds = true
+        self.backgroundTitle.layer.borderColor =  UIColor(red:0.18, green:0.26, blue:0.35, alpha:1.0).cgColor
+        self.backgroundTitle.layer.borderWidth = 1.5
+        self.titleImage.layer.cornerRadius = self.backgroundTitle.frame.height/2
+        self.titleImage.clipsToBounds = true
+        self.titleImage.layer.borderWidth = 1.5
+        self.titleImage.layer.borderColor = UIColor(red:0.18, green:0.26, blue:0.35, alpha:1.0).cgColor
+        
+        
+
+
        
 
         
