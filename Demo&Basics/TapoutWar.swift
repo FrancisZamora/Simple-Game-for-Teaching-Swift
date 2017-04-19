@@ -62,6 +62,9 @@ class TapoutWar: UIViewController {
         
     }
     
+    
+    //delays for stronger weapons
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
