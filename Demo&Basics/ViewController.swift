@@ -5,12 +5,11 @@
 //  Created by Francis Zamora on 1/29/17.
 //  Copyright © 2017 Francis. All rights reserved.
 //
-
 import UIKit
 
 class ViewController: UIViewController {
     var count = 60
-
+    
     @IBAction func timeReset(_ sender: Any) {
         count = 60
         
@@ -30,9 +29,9 @@ class ViewController: UIViewController {
     @IBOutlet var welcomeGreeting: UILabel!
     
     @IBOutlet var theSwitch: UISwitch!
-   
+    
     @IBOutlet var newLabel: UILabel!
-     @IBOutlet var changingView: UIView!
+    @IBOutlet var changingView: UIView!
     
     @IBOutlet var tapoutWar: UIButton!
     @IBOutlet var Winner: UILabel!
@@ -50,60 +49,60 @@ class ViewController: UIViewController {
             count = count - 1
             print(count)
             Winner.isHidden = true
-            resetButton.isHidden = true 
+            resetButton.isHidden = true
         }
         
         if count > 0 && count > 50 {
-                    
+            
             
         }
-            if (count == 60) {
-                let minutes = String(count / 60)
-                let seconds = String(count % 60)
-                timerDis.text = minutes + ":" + seconds
-                print(count)
-                count -= 1
-                resetButton.isHidden = true
-                Winner.isHidden = true
-                
-            }
-             if (count == 0) {
-                    timerDis.text = "0:0"
-                    Winner.isHidden = false
-                    self.resetScore()
-                    resetButton.isHidden = false
-                        
-                        
-            }
-          }
+        if (count == 60) {
+            let minutes = String(count / 60)
+            let seconds = String(count % 60)
+            timerDis.text = minutes + ":" + seconds
+            print(count)
+            count -= 1
+            resetButton.isHidden = true
+            Winner.isHidden = true
+            
+        }
+        if (count == 0) {
+            timerDis.text = "0:0"
+            Winner.isHidden = false
+            self.resetScore()
+            resetButton.isHidden = false
+            
+            
+        }
+    }
     
     func resetScore (){
-            if score1 > score2 {
-                Winner.text = "Player 2"
-            }
+        if score1 > score2 {
+            Winner.text = "Player 2"
+        }
         
-             if score2 > score1 {
-                       Winner.text = "Player 1"
-                
-             }
+        if score2 > score1 {
+            Winner.text = "Player 1"
+            
+        }
         
         if (score1 == score2) {
             Winner.text = "Tie Game, Play Again"
         }
-            score2 = 0
-            score1 = 0
+        score2 = 0
+        score1 = 0
         
     }
     
     
     
-
+    
     @IBAction func scoreWillChange(_ sender: Any) {
-       
+        
         
         if playerSwitch.isOn{
             changingView.backgroundColor = UIColor.blue
-        score2 = score2 + 1
+            score2 = score2 + 1
             
             let stringScore = String( describing: score2)
             print(score2)
@@ -114,16 +113,16 @@ class ViewController: UIViewController {
         }
         else {
             
-                changingView.backgroundColor = UIColor.red
-                //score2 = score2 + 1
-                
-                let stringScoree = String( describing: score2)
-                
-                scoreDisplay.text = stringScoree
             changingView.backgroundColor = UIColor.red
-
+            //score2 = score2 + 1
             
-    
+            let stringScoree = String( describing: score2)
+            
+            scoreDisplay.text = stringScoree
+            changingView.backgroundColor = UIColor.red
+            
+            
+            
             
             
         }
@@ -160,15 +159,15 @@ class ViewController: UIViewController {
             
             
         }
-
+        
     }
     
     
     
-        
-        
     
-   
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         changingView.backgroundColor = UIColor.red
@@ -179,12 +178,13 @@ class ViewController: UIViewController {
         newLabel.text = "Player 2 "
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
+
 

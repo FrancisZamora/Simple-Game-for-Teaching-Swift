@@ -64,13 +64,6 @@
                                     <action selector="scoreWillChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Aoa-h7-MEA"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TAPOUT BATTLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbA-aY-GCu">
-                                <rect key="frame" x="122" y="37" width="131" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cay-Yn-RA6">
                                 <rect key="frame" x="166" y="81" width="47" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -78,8 +71,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE WINNER IS " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbZ-VX-mhg">
+                                <rect key="frame" x="94" y="45" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEa-K8-5n2">
+                                <rect key="frame" x="221" y="44" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have 60 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbN-q1-RdJ">
+                                <rect key="frame" x="103" y="15" width="164" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbN-q1-RdJ">
                                 <rect key="frame" x="105" y="314" width="165" height="24"/>
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TAPOUT BATTLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbA-aY-GCu">
+                                <rect key="frame" x="114" y="36" width="193" height="36"/>
+>>>>>>> origin/master
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -112,6 +131,11 @@
                     <connections>
                         <outlet property="Winner" destination="hbN-q1-RdJ" id="chh-md-Ths"/>
                         <outlet property="changingView" destination="8bC-Xf-vdC" id="do7-NQ-EvC"/>
+<<<<<<< HEAD
+=======
+                        <outlet property="initTime" destination="hbN-q1-RdJ" id="3Tl-TL-n0S"/>
+                        <outlet property="initalTitle" destination="LbA-aY-GCu" id="72s-Dn-LWx"/>
+>>>>>>> origin/master
                         <outlet property="newLabel" destination="K8W-mE-KTL" id="Uyx-D1-XLx"/>
                         <outlet property="playerLabel" destination="BOk-oH-4je" id="y1H-ma-l6h"/>
                         <outlet property="playerSwitch" destination="OZi-mc-ZBu" id="QKD-Zq-FeR"/>
@@ -123,11 +147,13 @@
                         <outlet property="theSwitch" destination="X1m-eV-RYX" id="DaD-aI-Hne"/>
                         <outlet property="timerDis" destination="Cay-Yn-RA6" id="ETO-V5-RWe"/>
                         <outlet property="welcomeGreeting" destination="LbA-aY-GCu" id="kLi-1u-WIV"/>
+                        <outlet property="winnerL" destination="vbZ-VX-mhg" id="KLF-Ft-CNh"/>
+                        <outlet property="winnerPlayer" destination="DEa-K8-5n2" id="laN-hf-xk4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+            <point key="canvasLocation" x="141.59999999999999" y="158.77061469265368"/>
         </scene>
         <!--Tapout War-->
         <scene sceneID="EQK-tR-PeL">
