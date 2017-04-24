@@ -245,18 +245,18 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="yna-R6-4HM" firstAttribute="leading" secondItem="jsH-g2-cgT" secondAttribute="leading" id="2DC-dQ-DGU"/>
-                                    <constraint firstAttribute="trailing" secondItem="yna-R6-4HM" secondAttribute="trailing" id="5Od-sh-HZ3"/>
-                                    <constraint firstItem="yna-R6-4HM" firstAttribute="top" secondItem="jsH-g2-cgT" secondAttribute="top" id="Loe-Qv-OH4"/>
-                                    <constraint firstAttribute="bottom" secondItem="yna-R6-4HM" secondAttribute="bottom" id="U14-DG-5yi"/>
+                                    <constraint firstItem="yna-R6-4HM" firstAttribute="leading" secondItem="jsH-g2-cgT" secondAttribute="leading" id="JOr-DQ-Sed"/>
+                                    <constraint firstAttribute="bottom" secondItem="yna-R6-4HM" secondAttribute="bottom" id="SE6-6X-3eI"/>
+                                    <constraint firstItem="yna-R6-4HM" firstAttribute="top" secondItem="jsH-g2-cgT" secondAttribute="top" id="XCH-2Z-uid"/>
+                                    <constraint firstAttribute="trailing" secondItem="yna-R6-4HM" secondAttribute="trailing" id="yue-3V-ZJD"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cm6-NY-HaI">
                                 <rect key="frame" x="16" y="383" width="128" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhO-75-hPf">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhO-75-hPf">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Button" image="Image-3">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -290,9 +290,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMk-Te-ckI">
                                 <rect key="frame" x="233" y="383" width="128" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZe-VU-VAI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZe-VU-VAI">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Button" image="Image-4">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -323,12 +323,12 @@
                                     <constraint firstItem="alM-Mw-ipv" firstAttribute="leading" secondItem="ZVB-0H-ACW" secondAttribute="leading" id="l65-vc-S62"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFf-vK-dsz">
-                                <rect key="frame" x="16" y="519" width="128" height="128"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DFf-vK-dsz">
+                                <rect key="frame" x="16" y="538" width="128" height="91"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpS-UJ-qen">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpS-UJ-qen">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Button" image="Image-6">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -403,7 +403,10 @@
         <image name="Image" width="137" height="91"/>
         <image name="Image-1" width="150" height="84"/>
         <image name="Image-2" width="400" height="300"/>
+        <image name="Image-3" width="512" height="384"/>
+        <image name="Image-4" width="142" height="88"/>
         <image name="Image-5" width="320" height="216"/>
+        <image name="Image-6" width="137" height="91"/>
         <image name="Image-8" width="1050" height="572"/>
     </resources>
 </document>
